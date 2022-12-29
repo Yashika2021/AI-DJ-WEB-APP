@@ -13,20 +13,17 @@ body{
     color: black;
 }
 
-.div_speed{
-    float: left;
+.song{
+    font-size: 23px;
 }
 
-.div_speed_img , .div_volume_img{
-    width: 200px;
-    border-radius:100px;
+canvas{
+    border: 5px solid white;
+    margin-top: 150px;
+    box-shadow: 5px 5px 5px grey;
 }
 
-#speed, #volume{
-    font-size: 23px; 
-    margin: 15px;
-}
-
-.div_volume{
-    float:right;
+.play_button{
+    width: 130px;
+    font-size: 25px;
 }
