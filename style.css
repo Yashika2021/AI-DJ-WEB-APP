@@ -13,8 +13,22 @@ body{
     color: black;
 }
 
-.song{
-    font-size: 23px;
+.div_speed{
+    float: left;
+}
+
+.div_speed_img , .div_volume_img{
+    width: 200px;
+    border-radius:100px;
+}
+
+#speed, #volume{
+    font-size: 23px; 
+    margin: 15px;
+}
+
+.div_volume{
+    float:right;
 }
 
 canvas{
