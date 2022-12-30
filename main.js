@@ -9,7 +9,7 @@ function preload(){
 }
 
 function setup(){
-    canvas = createCanvas(500, 400);
+    canvas = createCanvas(500, 500);
     canvas.position(380, 10);
     video = createCapture(VIDEO);
     video.hide();
@@ -23,7 +23,16 @@ function modelLoaded(){
 }
 
 function draw(){
-    image(video, 0, 0, 500, 400);
+    image(video, 0, 0, 500, 500);
+
+    fill("#FF0000");
+    stroke("#FF0000");
+    circle(leftWristX , leftWristY, 20);
+    inNumberleftWristY= Number(leftWristY);
+    remove_decimals = floor(inNumberleftWristY);
+    volume = remove_decimals/500;
+    document.getElementById("volume").innerHTML  = "Volume = " + volume;
+    song.setVolume(volume);    
 }
 
 function play(){
